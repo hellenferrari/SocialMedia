@@ -20,7 +20,7 @@ JSON Placeholder API ```https://jsonplaceholder.typicode.com/```
 
 ---
 
-## Posts Comments Feature Specs
+## Post Comments Feature Specs
 
 ### Model Specs
 ### Payload Contract
