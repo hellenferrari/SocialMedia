@@ -1,18 +1,18 @@
 # Social Media App
 
 ### Base API
-#### JSON Placeholder API - ```https://jsonplaceholder.typicode.com/```
+JSON Placeholder API ```https://jsonplaceholder.typicode.com/```
 
 ## Posts Feature Specs
 
-### List posts
-### Online mode
-### Offline mode
+- List posts
+- Online mode
+- Offline mode
 
 ## Use Cases
 
-### Load posts from remote
-### Load posts from cache
+- Load posts from remote
+- Load posts from cache
 
 
 ## Model Specs
