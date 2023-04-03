@@ -4,7 +4,7 @@
 
 import Foundation
 
-public struct Service {
+public struct RemotePostsLoader {
     
     public init() { }
         

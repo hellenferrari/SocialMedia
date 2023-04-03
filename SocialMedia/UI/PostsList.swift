@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct PostsList: View {
-    let service = Service()
+    let service = RemotePostsLoader()
     @State var posts = [Post]()
     
     
