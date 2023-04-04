@@ -9,29 +9,31 @@ struct PostsList: View {
     
     var body: some View {
         VStack {
-            List(viewModel.postsWithUser, id: \.post.id) { postDetail in
-                Section {
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Circle()
-                                .fill(.gray)
-                                .frame(width: 50, height: 50)
-                            
-                            Text(postDetail.user.name)
-                        }
+            NavigationView {
+                List(viewModel.postsWithUser, id: \.post.id) { postDetail in
+                    Section {
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Circle()
+                                    .fill(.gray)
+                                    .frame(width: 50, height: 50)
+                                
+                                Text(postDetail.user.name)
+                            }
 
-                        Text(postDetail.post.title)
-                            .font(Font.subheadline).bold()
-                            .padding(.top, 1)
-                        Text(postDetail.post.body)
-                            .font(Font.body)
-                            .padding(.top, 1)
+                            Text(postDetail.post.title)
+                                .font(Font.subheadline).bold()
+                                .padding(.top, 1)
+                            Text(postDetail.post.body)
+                                .font(Font.body)
+                                .padding(.top, 1)
+                        }
                     }
+                    
                 }
-                
+                .navigationBarTitle("Posts", displayMode: .inline)
+                .listStyle(InsetListStyle())
             }
-            .navigationBarTitle("Posts", displayMode: .inline)
-            .listStyle(InsetListStyle())
         }
         .onAppear {
             Task { @MainActor in
