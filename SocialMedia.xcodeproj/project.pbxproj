@@ -102,9 +102,9 @@
 		74CC57E629D774F2006BF9B7 /* SocialMedia */ = {
 			isa = PBXGroup;
 			children = (
-				74CC581D29DB9D7E006BF9B7 /* ViewModels */,
-				74CC581829D78B94006BF9B7 /* Models */,
 				74CC581529D78B3A006BF9B7 /* Network */,
+				74CC581829D78B94006BF9B7 /* Models */,
+				74CC581D29DB9D7E006BF9B7 /* ViewModels */,
 				74CC581129D77767006BF9B7 /* UI */,
 				74CC57E729D774F2006BF9B7 /* SocialMediaApp.swift */,
 				74CC57EB29D774F5006BF9B7 /* Assets.xcassets */,
