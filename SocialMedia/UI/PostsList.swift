@@ -5,28 +5,25 @@
 import SwiftUI
 
 struct PostsList: View {
-    let service = RemotePostsLoader()
-    @State var posts = [Post]()
-    
+    @ObservedObject var viewModel = PostsViewModel()
     
     var body: some View {
         VStack {
-            List(posts, id: \.id) { post in
+            List(viewModel.postsWithUser, id: \.post.id) { postDetail in
                 Section {
                     VStack(alignment: .leading) {
                         HStack {
-                            Image(systemName: "")
+                            Circle()
+                                .fill(.gray)
                                 .frame(width: 50, height: 50)
-                                .clipShape(Circle())
-                                .backgroundStyle(.gray)
                             
-                            Text("user")
+                            Text(postDetail.user.name)
                         }
 
-                        Text(post.title)
+                        Text(postDetail.post.title)
                             .font(Font.subheadline).bold()
                             .padding(.top, 1)
-                        Text(post.body)
+                        Text(postDetail.post.body)
                             .font(Font.body)
                             .padding(.top, 1)
                     }
@@ -34,12 +31,12 @@ struct PostsList: View {
                 
             }
             .navigationBarTitle("Posts", displayMode: .inline)
+            .listStyle(InsetListStyle())
         }
         .onAppear {
-            Task {
-                posts = try await service.fetchPosts()
+            Task { @MainActor in
+                await viewModel.getPosts()
             }
-            
         }
     }
 }
