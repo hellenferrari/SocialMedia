@@ -11,4 +11,8 @@ struct Post: Codable {
     let body: String
 }
 
+struct PostWithUser {
+    let post: Post
+    let user: User
+}
 
