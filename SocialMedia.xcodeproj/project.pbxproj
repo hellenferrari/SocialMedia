@@ -17,6 +17,7 @@
 		74CC581729D78B87006BF9B7 /* RemotePostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581629D78B87006BF9B7 /* RemotePostsLoader.swift */; };
 		74CC581A29D78BA1006BF9B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581929D78BA1006BF9B7 /* User.swift */; };
 		74CC581C29D78BAC006BF9B7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581B29D78BAC006BF9B7 /* Post.swift */; };
+		74CC581F29DB9D9C006BF9B7 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581E29DB9D9C006BF9B7 /* PostsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		74CC581629D78B87006BF9B7 /* RemotePostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePostsLoader.swift; sourceTree = "<group>"; };
 		74CC581929D78BA1006BF9B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74CC581B29D78BAC006BF9B7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		74CC581E29DB9D9C006BF9B7 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		74CC57E629D774F2006BF9B7 /* SocialMedia */ = {
 			isa = PBXGroup;
 			children = (
+				74CC581D29DB9D7E006BF9B7 /* ViewModels */,
 				74CC581829D78B94006BF9B7 /* Models */,
 				74CC581529D78B3A006BF9B7 /* Network */,
 				74CC581129D77767006BF9B7 /* UI */,
@@ -158,6 +161,14 @@
 				74CC581B29D78BAC006BF9B7 /* Post.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		74CC581D29DB9D7E006BF9B7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				74CC581E29DB9D9C006BF9B7 /* PostsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 			files = (
 				74CC581A29D78BA1006BF9B7 /* User.swift in Sources */,
 				74CC581329D77788006BF9B7 /* PostsList.swift in Sources */,
+				74CC581F29DB9D9C006BF9B7 /* PostsViewModel.swift in Sources */,
 				74CC57E829D774F2006BF9B7 /* SocialMediaApp.swift in Sources */,
 				74CC581729D78B87006BF9B7 /* RemotePostsLoader.swift in Sources */,
 				74CC581C29D78BAC006BF9B7 /* Post.swift in Sources */,
