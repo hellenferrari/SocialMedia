@@ -18,4 +18,11 @@ public struct RemotePostsLoader {
         return posts
     }
     
+    func fetchUsers() async throws -> [User] {
+        let (data, response) = try await URLSession.shared.data(from: URL(string: "https://jsonplaceholder.typicode.com/users")!)
+        
+        let users = try JSONDecoder().decode([User].self, from: data)
+        return users
+    }
+    
 }
