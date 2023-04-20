@@ -6,10 +6,13 @@ import Foundation
 
 public struct RemotePostsLoader: IPostsLoader {
     
+    let endpoints = PostsEndpoints()
+    
     public init() { }
         
     func fetchPosts() async throws -> [Post] {
-        let (data, response) = try await URLSession.shared.data(from: URL(string: "https://jsonplaceholder.typicode.com/posts")!)
+        let postsURL = endpoints.baseURL + endpoints.posts
+        let (data, response) = try await URLSession.shared.data(from: URL(string: postsURL)!)
         print(response)
         
         let posts = try JSONDecoder().decode([Post].self, from: data)
@@ -19,7 +22,8 @@ public struct RemotePostsLoader: IPostsLoader {
     }
     
     func fetchUsers() async throws -> [User] {
-        let (data, response) = try await URLSession.shared.data(from: URL(string: "https://jsonplaceholder.typicode.com/users")!)
+        let usersURL = endpoints.baseURL + endpoints.users
+        let (data, response) = try await URLSession.shared.data(from: URL(string: usersURL)!)
         
         let users = try JSONDecoder().decode([User].self, from: data)
         return users

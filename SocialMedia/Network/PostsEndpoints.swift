@@ -3,3 +3,10 @@
 //
 
 import Foundation
+
+struct PostsEndpoints {
+    let baseURL = "https://jsonplaceholder.typicode.com"
+    
+    let posts = "/posts"
+    let users = "/users"
+}
