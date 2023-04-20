@@ -4,7 +4,7 @@
 
 import Foundation
 
-public struct RemotePostsLoader {
+public struct RemotePostsLoader: IPostsLoader {
     
     public init() { }
         
