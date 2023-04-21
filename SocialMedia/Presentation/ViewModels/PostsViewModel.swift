@@ -5,10 +5,14 @@
 import Foundation
 
 class PostsViewModel: ObservableObject {
-    let service = RemotePostsLoader()
+    private let service: PostsLoader
     var posts = [Post]()
     var users = [User]()
     @Published var postsWithUser = [PostWithUser]()
+
+    init(service: PostsLoader) {
+        self.service = service
+    }
     
     func getPosts() async {
         posts = try! await service.fetchPosts()
@@ -33,3 +37,8 @@ class PostsViewModel: ObservableObject {
     }
     
 }
+
+// PostsViewModel -> RemotePostsLoader
+// PostsViewModel -> PostsLoader <|--- RemotePostsLoader
+// PostsViewModel -> PostsLoader <|--- LocalPostsLoader
+// PostsViewModel -> PostsLoader <|--- RemoteWithLocalFallbackPostsLoader
