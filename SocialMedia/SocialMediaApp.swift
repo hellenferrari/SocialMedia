@@ -6,9 +6,11 @@ import SwiftUI
 
 @main
 struct SocialMediaApp: App {
+    private let loader: PostsLoader = RemotePostsLoader(httpClient: URLSessionHTTPClient())
+    
     var body: some Scene {
         WindowGroup {
-            PostsList()
+            PostsList(viewModel: PostsViewModel(service: loader))
         }
     }
 }
