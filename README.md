@@ -35,19 +35,6 @@ JSON Placeholder API ```https://jsonplaceholder.typicode.com/```
 
 ### Payload Contract
 
----
-
-## Post Comments Feature Specs
-
-### Model Specs
-### Payload Contract
-
----
-
-## Photos Feature Specs
-
-### Model Specs
-### Payload Contract
 
 ---
 
