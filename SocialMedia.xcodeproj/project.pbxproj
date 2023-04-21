@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435CA59029F24EE3009EDCFE /* DummyPostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435CA58F29F24EE3009EDCFE /* DummyPostsLoader.swift */; };
 		740877AE29F1DAAB00F3B77D /* PostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AD29F1DAAB00F3B77D /* PostsLoader.swift */; };
 		740877B029F1DBC100F3B77D /* PostsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */; };
 		740877B229F1DBE800F3B77D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877B129F1DBE800F3B77D /* HTTPClient.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		435CA58F29F24EE3009EDCFE /* DummyPostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPostsLoader.swift; sourceTree = "<group>"; };
 		740877AD29F1DAAB00F3B77D /* PostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsLoader.swift; sourceTree = "<group>"; };
 		740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoints.swift; sourceTree = "<group>"; };
 		740877B129F1DBE800F3B77D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				74CC57EE29D774F5006BF9B7 /* Preview Assets.xcassets */,
+				435CA58F29F24EE3009EDCFE /* DummyPostsLoader.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74CC581A29D78BA1006BF9B7 /* User.swift in Sources */,
+				435CA59029F24EE3009EDCFE /* DummyPostsLoader.swift in Sources */,
 				740877B429F1DC2100F3B77D /* URLSessionHTTPClient.swift in Sources */,
 				74CC581329D77788006BF9B7 /* PostsList.swift in Sources */,
 				74CC581F29DB9D9C006BF9B7 /* PostsViewModel.swift in Sources */,
