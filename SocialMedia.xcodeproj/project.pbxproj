@@ -15,6 +15,7 @@
 		74CC57E829D774F2006BF9B7 /* SocialMediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC57E729D774F2006BF9B7 /* SocialMediaApp.swift */; };
 		74CC57EC29D774F5006BF9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC57EB29D774F5006BF9B7 /* Assets.xcassets */; };
 		74CC57EF29D774F5006BF9B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC57EE29D774F5006BF9B7 /* Preview Assets.xcassets */; };
+		74CC57F929D774F5006BF9B7 /* RemotePostsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC57F829D774F5006BF9B7 /* RemotePostsLoaderTests.swift */; };
 		74CC581329D77788006BF9B7 /* PostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581229D77788006BF9B7 /* PostsList.swift */; };
 		74CC581729D78B87006BF9B7 /* RemotePostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581629D78B87006BF9B7 /* RemotePostsLoader.swift */; };
 		74CC581A29D78BA1006BF9B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC581929D78BA1006BF9B7 /* User.swift */; };
@@ -43,6 +44,7 @@
 		74CC57EB29D774F5006BF9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CC57EE29D774F5006BF9B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74CC57F429D774F5006BF9B7 /* SocialMediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CC57F829D774F5006BF9B7 /* RemotePostsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePostsLoaderTests.swift; sourceTree = "<group>"; };
 		74CC581229D77788006BF9B7 /* PostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsList.swift; sourceTree = "<group>"; };
 		74CC581629D78B87006BF9B7 /* RemotePostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePostsLoader.swift; sourceTree = "<group>"; };
 		74CC581929D78BA1006BF9B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		74CC57F729D774F5006BF9B7 /* SocialMediaTests */ = {
 			isa = PBXGroup;
 			children = (
+				74CC57F829D774F5006BF9B7 /* RemotePostsLoaderTests.swift */,
 			);
 			path = SocialMediaTests;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CC57F929D774F5006BF9B7 /* RemotePostsLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
