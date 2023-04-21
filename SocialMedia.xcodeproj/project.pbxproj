@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		740877AE29F1DAAB00F3B77D /* IPostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AD29F1DAAB00F3B77D /* IPostsLoader.swift */; };
 		740877B029F1DBC100F3B77D /* PostsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */; };
-		740877B229F1DBE800F3B77D /* IHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877B129F1DBE800F3B77D /* IHTTPClient.swift */; };
+		740877B229F1DBE800F3B77D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877B129F1DBE800F3B77D /* HTTPClient.swift */; };
 		740877B429F1DC2100F3B77D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877B329F1DC2100F3B77D /* URLSessionHTTPClient.swift */; };
 		74CC57E829D774F2006BF9B7 /* SocialMediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC57E729D774F2006BF9B7 /* SocialMediaApp.swift */; };
 		74CC57EC29D774F5006BF9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC57EB29D774F5006BF9B7 /* Assets.xcassets */; };
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		740877AD29F1DAAB00F3B77D /* IPostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPostsLoader.swift; sourceTree = "<group>"; };
 		740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoints.swift; sourceTree = "<group>"; };
-		740877B129F1DBE800F3B77D /* IHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTTPClient.swift; sourceTree = "<group>"; };
+		740877B129F1DBE800F3B77D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		740877B329F1DC2100F3B77D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		74CC57E429D774F2006BF9B7 /* SocialMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CC57E729D774F2006BF9B7 /* SocialMediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaApp.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 			children = (
 				74CC581629D78B87006BF9B7 /* RemotePostsLoader.swift */,
 				740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */,
-				740877B129F1DBE800F3B77D /* IHTTPClient.swift */,
+				740877B129F1DBE800F3B77D /* HTTPClient.swift */,
 				740877B329F1DC2100F3B77D /* URLSessionHTTPClient.swift */,
 			);
 			path = Network;
@@ -284,7 +284,7 @@
 				74CC57E829D774F2006BF9B7 /* SocialMediaApp.swift in Sources */,
 				74CC581729D78B87006BF9B7 /* RemotePostsLoader.swift in Sources */,
 				74CC581C29D78BAC006BF9B7 /* Post.swift in Sources */,
-				740877B229F1DBE800F3B77D /* IHTTPClient.swift in Sources */,
+				740877B229F1DBE800F3B77D /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

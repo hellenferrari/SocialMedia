@@ -4,6 +4,5 @@
 
 import Foundation
 
-struct URLSessionHTTPClient: IHTTPClient {
-    
+struct URLSessionHTTPClient: HTTPClient {
 }
