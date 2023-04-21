@@ -4,7 +4,7 @@
 
 import Foundation
 
-public struct RemotePostsLoader: IPostsLoader {
+public struct RemotePostsLoader: PostsLoader {
     
     let endpoints = PostsEndpoints()
     

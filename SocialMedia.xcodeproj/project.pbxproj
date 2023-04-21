@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		740877AE29F1DAAB00F3B77D /* IPostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AD29F1DAAB00F3B77D /* IPostsLoader.swift */; };
+		740877AE29F1DAAB00F3B77D /* PostsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AD29F1DAAB00F3B77D /* PostsLoader.swift */; };
 		740877B029F1DBC100F3B77D /* PostsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */; };
 		740877B229F1DBE800F3B77D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877B129F1DBE800F3B77D /* HTTPClient.swift */; };
 		740877B429F1DC2100F3B77D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740877B329F1DC2100F3B77D /* URLSessionHTTPClient.swift */; };
@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		740877AD29F1DAAB00F3B77D /* IPostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPostsLoader.swift; sourceTree = "<group>"; };
+		740877AD29F1DAAB00F3B77D /* PostsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsLoader.swift; sourceTree = "<group>"; };
 		740877AF29F1DBC100F3B77D /* PostsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoints.swift; sourceTree = "<group>"; };
 		740877B129F1DBE800F3B77D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		740877B329F1DC2100F3B77D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		740877AC29F1DA4100F3B77D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				740877AD29F1DAAB00F3B77D /* IPostsLoader.swift */,
+				740877AD29F1DAAB00F3B77D /* PostsLoader.swift */,
 				74CC581829D78B94006BF9B7 /* Models */,
 			);
 			path = Domain;
@@ -95,7 +95,6 @@
 			children = (
 				74CC57E629D774F2006BF9B7 /* SocialMedia */,
 				74CC57F729D774F5006BF9B7 /* SocialMediaTests */,
-				74CC580129D774F5006BF9B7 /* SocialMediaUITests */,
 				74CC57E529D774F2006BF9B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -279,7 +278,7 @@
 				740877B429F1DC2100F3B77D /* URLSessionHTTPClient.swift in Sources */,
 				74CC581329D77788006BF9B7 /* PostsList.swift in Sources */,
 				74CC581F29DB9D9C006BF9B7 /* PostsViewModel.swift in Sources */,
-				740877AE29F1DAAB00F3B77D /* IPostsLoader.swift in Sources */,
+				740877AE29F1DAAB00F3B77D /* PostsLoader.swift in Sources */,
 				740877B029F1DBC100F3B77D /* PostsEndpoints.swift in Sources */,
 				74CC57E829D774F2006BF9B7 /* SocialMediaApp.swift in Sources */,
 				74CC581729D78B87006BF9B7 /* RemotePostsLoader.swift in Sources */,

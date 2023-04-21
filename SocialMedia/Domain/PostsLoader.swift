@@ -4,7 +4,7 @@
 
 import Foundation
 
-protocol IPostsLoader {
+protocol PostsLoader {
     func fetchPosts() async throws -> [Post]
     func fetchUsers() async throws -> [User]
 }
